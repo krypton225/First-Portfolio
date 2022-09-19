@@ -35,7 +35,7 @@ function layersSystem() {
 
     // * Get all ID's sections
     let homeSection = document.getElementById("home");
-    let secondSection = document.getElementById("second");
+    let aboutSection = document.getElementById("about");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {
@@ -51,7 +51,7 @@ function layersSystem() {
             if (myLink.getAttribute("id") === "link-home") {
                 homeSection.classList.add("high-index");
             } else if (myLink.getAttribute("id") === "link-about") {
-                secondSection.classList.add("high-index");
+                aboutSection.classList.add("high-index");
             }
         })
     })

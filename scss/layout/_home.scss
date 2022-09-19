@@ -1,13 +1,11 @@
 .home {
     width: 100%;
     height: 100%;
-    border-top: 2px solid $orangeColor;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    transform-origin: top right;
-    transform-style: preserve-3D;
+    @include styleOriginTransform;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +83,9 @@
             width: 100%;
             font-size: 5.2rem !important;
             letter-spacing: 2.3px;
+            animation-name: fromRightToLeft;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1.5s;
 
             @media (max-width: 520px) {
                 font-size: 3.4rem !important;
@@ -95,6 +96,9 @@
             width: 100%;
             margin-top: 2rem;
             font-size: 4.1rem;
+            animation-name: fromLeftToRight;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1.5s;
 
             @media (max-width: 520px) {
                 font-size: 3rem;
@@ -132,5 +136,33 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fromRightToLeft {
+    0% {
+        transform: translateX(-150px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeftToRight {
+    0% {
+        transform: translateX(350px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
     }
 }

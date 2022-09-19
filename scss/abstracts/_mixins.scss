@@ -6,6 +6,11 @@
     height: 100%;
 }
 
-@mixin opacity5($myColor) {
-    background-color: rgba($myColor, 0.5);
+@mixin styleOriginTransform {
+    transform-origin: top right;
+    transform-style: preserve-3D;
+}
+
+@mixin pad140 {
+    padding: 14rem 0;
 }

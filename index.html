@@ -12,7 +12,7 @@
     <meta name="author" content="Khaled Mohamed Mahmoud">
 
     <!-- * Title of the page -->
-    <title>A First Portfolio | It's Very A Simple Portfolio!</title>
+    <title>A First Portfolio | A Very Simple Portfolio!</title>
 
     <!-- * All favicon needed in the page -->
     <link type="image/png" sizes="16x16" rel="icon" href="./assets/favicons/Web/icons8-f-cute-16.png">
@@ -47,7 +47,7 @@
 
     <!-- * Start main-bg section -->
     <main class="main-bg" id="main-bg">
-        <ul class="menu">
+        <ul class="menu" id="menu">
             <li href="#" class="menu-item" data-name="home">
                 <a href="#home" class="menu-link" id="link-home">
                     <i class="fa-solid fa-house"></i>
@@ -55,7 +55,7 @@
             </li> <!-- ./menu-item -->
 
             <li href="#" class="menu-item" data-name="about">
-                <a href="#second" class="menu-link" id="link-about">
+                <a href="#about" class="menu-link" id="link-about">
                     <i class="fa-solid fa-circle-info"></i>
                 </a> <!-- ./menu-link -->
             </li> <!-- ./menu-item -->
@@ -102,8 +102,34 @@
                 </h4> <!-- ./home__content__title -->
             </div> <!-- ./home__content -->
         </section> <!-- ./home -->
-    </main> <!-- ./main-bg -->
 
+        <!-- * Start about section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-5 gx-5">
+                        <div class="about__img">
+                            <img src="./assets/images/man-1.jpg" alt="An one person" draggable="false">
+                        </div> <!-- ./about__img -->
+                    </div> <!-- ./col-md-6 -->
+
+                    <div class="col-md-7 gx-5">
+                        <div class="about__content">
+                            <h4 class="about__content__title sec-title mb-5">create full products!</h4>
+                            <p class="about__content__desc__one">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatum, doloribus ad
+                                ut nesciunt quidem quae error hic cumque repellat culpa praesentium laboriosam ex
+                                architecto fugiat aliquid officia quisquam? Facilis expedita.
+                            </p> <!-- ./about__content__desc -->
+                            <p class="about__content__desc__two p-custom mt-5">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            </p> <!-- ./about__content__desc__two -->
+                        </div> <!-- ./about__content -->
+                    </div> <!-- ./col-md-6 -->
+                </div> <!-- ./row -->
+            </div> <!-- ./container -->
+        </section> <!-- ./about -->
+    </main> <!-- ./main-bg -->
 
     <!-- * All my script files -->
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
