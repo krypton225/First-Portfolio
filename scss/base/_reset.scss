@@ -1,0 +1,46 @@
+html {
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $darkColor !important;
+    color: $coffeeColor !important;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0.3em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $orangeColor;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+}
+
+::selection {
+    color: $coffeeColor;
+    background: $orangeColor;
+}
+
+img {
+    max-width: 100% !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.high-index {
+    z-index: 1000;
+    transform: rotate(0) !important;
+    top: 0 !important;
+}
