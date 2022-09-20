@@ -12,7 +12,7 @@
     transform: rotate(90deg);
     @include styleOriginTransform;
     z-index: 500;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0.3s;
 
     @media (max-width: 768px) {
         padding: 15rem 0 10rem !important;

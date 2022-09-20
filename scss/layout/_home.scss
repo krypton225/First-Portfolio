@@ -12,7 +12,7 @@
     text-align: center;
     background-color: rgba(15, 15, 15, 0.397);
     z-index: 400;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0.3s;
 
     &.add-props {
         top: -100%;

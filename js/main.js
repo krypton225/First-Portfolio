@@ -1,3 +1,5 @@
+// import "../node_modules/@fancyapps/ui/src/Fancybox/Fancybox";
+
 showPicLanding();
 showTextLandingPage();
 layersSystem();
@@ -65,12 +67,10 @@ function layersSystem() {
 function swiperWorks() {
     let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        touchStartPreventDefault: false,
-        touchMoveStopPropagation: false,
         allowTouchMove: false,
         loop: true,
         autoplay: {
-            delay: 6000,
+            delay: 4200,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },

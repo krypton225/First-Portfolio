@@ -12,7 +12,7 @@
     transform: rotate(90deg);
     @include styleOriginTransform;
     z-index: 700;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0.3s;
 
     .swiper-slide {
         &:hover .works__box__content {
@@ -70,7 +70,7 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                font-size: 1.7rem;
+                font-size: 1.9rem;
                 cursor: pointer;
                 background-color: $orangeColor;
                 color: $coffeeColor;
