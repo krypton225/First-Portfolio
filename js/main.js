@@ -1,6 +1,7 @@
 showPicLanding();
 showTextLandingPage();
 layersSystem();
+swiperWorks();
 
 function showPicLanding() {
     let picLanding = document.getElementById("picLanding");
@@ -36,6 +37,7 @@ function layersSystem() {
     // * Get all ID's sections
     let homeSection = document.getElementById("home");
     let aboutSection = document.getElementById("about");
+    let worksSection = document.getElementById("works");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {
@@ -52,7 +54,38 @@ function layersSystem() {
                 homeSection.classList.add("high-index");
             } else if (myLink.getAttribute("id") === "link-about") {
                 aboutSection.classList.add("high-index");
+            } else if (myLink.getAttribute("id") === "link-works") {
+                worksSection.classList.add("high-index");
             }
-        })
-    })
+
+        });
+    });
+}
+
+function swiperWorks() {
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        touchStartPreventDefault: false,
+        touchMoveStopPropagation: false,
+        allowTouchMove: false,
+        loop: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        nextButton: '#js-prev1',
+        prevButton: '#js-next1',
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+        }
+    });
 }

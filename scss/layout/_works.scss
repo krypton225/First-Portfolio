@@ -1,0 +1,81 @@
+.works {
+    width: 100%;
+    height: 100%;
+    @include pad140;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 15, 15, 0.397);
+    transform: rotate(90deg);
+    @include styleOriginTransform;
+    z-index: 700;
+    transition: all 0.3s ease-in-out;
+
+    .swiper-slide {
+        &:hover .works__box__content {
+            top: 0;
+        }
+    }
+
+    &__box {
+        width: 100%;
+        height: 32rem;
+        border-radius: 1rem;
+        position: relative;
+        text-align: center;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            position: absolute;
+            top: -110%;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(15 15 15 / 77%);
+            z-index: 9999;
+            transition: all 0.4s ease-in-out;
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin: 0 2rem;
+                padding: 1.4rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 1.7rem;
+                cursor: pointer;
+                background-color: $orangeColor;
+                color: $coffeeColor;
+                transition: all 0.5s ease-in;
+            }
+        }
+    }
+}

@@ -40,7 +40,7 @@ ul {
 }
 
 .high-index {
-    z-index: 1000;
+    z-index: 1000 !important;
     transform: rotate(0) !important;
     top: 0 !important;
 }
