@@ -238,7 +238,57 @@ p {
   }
 }
 .main-bg .menu .menu-item {
+  position: relative;
   font-size: 2.2rem;
+}
+.main-bg .menu .menu-item::before {
+  content: attr(data-name);
+  width: 8rem;
+  height: 4.7rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: -130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  background-color: #203857;
+  color: #e8dab2;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1100px) {
+  .main-bg .menu .menu-item::before {
+    top: 125%;
+  }
+}
+.main-bg .menu .menu-item:hover::before {
+  left: -180%;
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .main-bg .menu .menu-item:hover::before {
+    left: -42%;
+  }
+}
+@media (max-width: 500px) {
+  .main-bg .menu .menu-item:hover::before {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 .main-bg .menu .menu-item .menu-link {
   display: block;
@@ -276,6 +326,10 @@ p {
 }
 .main-bg .menu .menu-item .menu-link:hover::before {
   left: 0;
+}
+.main-bg .menu .menu-item .menu-link:focus::before, .main-bg .menu .menu-item .menu-link:active::before {
+  color: #203857 !important;
+  background-color: transparent !important;
 }
 
 .home {
