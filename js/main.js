@@ -4,6 +4,7 @@ showPicLanding();
 showTextLandingPage();
 layersSystem();
 swiperWorks();
+swiperTestimonials();
 
 function showPicLanding() {
     let picLanding = document.getElementById("picLanding");
@@ -41,6 +42,7 @@ function layersSystem() {
     let aboutSection = document.getElementById("about");
     let worksSection = document.getElementById("works");
     let toolsSection = document.getElementById("tools");
+    let testimonialsSection = document.getElementById("testimonials");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {
@@ -66,6 +68,9 @@ function layersSystem() {
             } else if (myLink.getAttribute("id") === "link-tools") {
                 toolsSection.classList.add("high-index");
                 toolsSection.appendChild(setTitleOfSectionAtBottom("tools"));
+            } else if (myLink.getAttribute("id") === "link-testimonials") {
+                testimonialsSection.classList.add("high-index");
+                testimonialsSection.appendChild(setTitleOfSectionAtBottom("testimonials"));
             }
         });
     });
@@ -92,6 +97,45 @@ function swiperWorks() {
             320: {
                 slidesPerView: 1,
                 spaceBetween: 20
+            },
+        }
+    });
+}
+
+function swiperTestimonials() {
+    let swiperTestimonials = new Swiper(".swiper-testimonials", {
+        effect: "coverflow",
+        loop: true,
+        autoplay: {
+            delay: 2600,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "3",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+                resistanceRatio: 0.85
+            },
+            650: {
+                slidesPerView: 2,
+                spaceBetween: 5,
+                resistanceRatio: 0.85
+            },
+            1020: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                resistanceRatio: 0.85
             },
         }
     });

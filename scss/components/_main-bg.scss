@@ -46,11 +46,11 @@
 
             &::before {
                 content: "";
-                width: 80%;
+                width: 86%;
                 height: 0.4rem;
                 position: absolute;
                 top: 50%;
-                left: 10%;
+                left: 7%;
                 background-color: $orangeColor;
             }
         }
@@ -65,7 +65,7 @@
 
             &::before {
                 content: attr(data-name);
-                width: 8rem;
+                width: 10rem;
                 height: 4.7rem;
                 padding: 0.8rem 1.1rem;
                 border-radius: 0.6rem;
@@ -90,7 +90,7 @@
             }
 
             &:hover::before {
-                left: -180%;
+                left: -230%;
                 visibility: visible;
                 opacity: 1;
 
@@ -121,7 +121,7 @@
                 overflow: hidden;
 
                 @media (max-width: 1120px) {
-                    padding: 2.2rem;
+                    padding: 2.1rem;
                 }
 
                 &::before {
