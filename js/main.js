@@ -40,6 +40,7 @@ function layersSystem() {
     let homeSection = document.getElementById("home");
     let aboutSection = document.getElementById("about");
     let worksSection = document.getElementById("works");
+    let toolsSection = document.getElementById("tools");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {
@@ -56,10 +57,16 @@ function layersSystem() {
                 homeSection.classList.add("high-index");
             } else if (myLink.getAttribute("id") === "link-about") {
                 aboutSection.classList.add("high-index");
+                aboutSection.appendChild(setTitleOfSectionAtBottom("about"));
+                setTitleOfSectionAtBottom("About", aboutSection);
             } else if (myLink.getAttribute("id") === "link-works") {
                 worksSection.classList.add("high-index");
+                worksSection.appendChild(setTitleOfSectionAtBottom("works"));
+                setTitleOfSectionAtBottom("Works", worksSection);
+            } else if (myLink.getAttribute("id") === "link-tools") {
+                toolsSection.classList.add("high-index");
+                toolsSection.appendChild(setTitleOfSectionAtBottom("tools"));
             }
-
         });
     });
 }
@@ -88,4 +95,14 @@ function swiperWorks() {
             },
         }
     });
+}
+
+function setTitleOfSectionAtBottom(titleName) {
+    let mySpan = document.createElement("span");
+    mySpan.classList.add("text-line");
+
+    let myText = document.createTextNode(titleName);
+    mySpan.appendChild(myText);
+
+    return mySpan;
 }

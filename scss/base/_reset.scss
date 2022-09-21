@@ -44,3 +44,28 @@ ul {
     transform: rotate(0) !important;
     top: 0 !important;
 }
+
+.text-line {
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem 0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4.5rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $orangeColor;
+    color: $orangeColor;
+    background-color: #00000080;
+    user-select: none;
+    z-index: 99999;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
