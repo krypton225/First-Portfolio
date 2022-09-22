@@ -556,7 +556,7 @@ p {
 }
 .home__content__hello {
   width: 100%;
-  font-size: 5.2rem !important;
+  font-size: 5.6rem !important;
   letter-spacing: 2.3px;
   -webkit-animation-name: fromRightToLeft;
           animation-name: fromRightToLeft;
@@ -573,7 +573,7 @@ p {
 .home__content__title {
   width: 100%;
   margin-top: 2rem;
-  font-size: 4.1rem;
+  font-size: 4rem;
   -webkit-animation-name: fromLeftToRight;
           animation-name: fromLeftToRight;
   -webkit-animation-timing-function: ease-in-out;
