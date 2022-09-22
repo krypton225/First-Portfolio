@@ -1,0 +1,55 @@
+.my-btn {
+    width: 20rem;
+    height: 4.1rem;
+    position: relative;
+    border: 0.2rem solid $orangeColor;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: $orangeColor;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &::before {
+        content: "";
+        width: 23%;
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 2.2rem;
+        border-width: 0 0 0.3rem 0.3rem;
+        border-style: solid;
+        border-color: #ee6c4d;
+        border-radius: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &::after {
+        content: "";
+        width: 23%;
+        height: 70%;
+        position: absolute;
+        top: 0;
+        right: 2.2rem;
+        border-width: 0.3rem 0.3rem 0 0;
+        border-style: solid;
+        border-color: #ee6c4d;
+        border-radius: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        width: 95%;
+        height: 95%;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

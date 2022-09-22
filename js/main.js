@@ -43,6 +43,7 @@ function layersSystem() {
     let worksSection = document.getElementById("works");
     let toolsSection = document.getElementById("tools");
     let testimonialsSection = document.getElementById("testimonials");
+    let contactSection = document.getElementById("contact");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {
@@ -71,6 +72,9 @@ function layersSystem() {
             } else if (myLink.getAttribute("id") === "link-testimonials") {
                 testimonialsSection.classList.add("high-index");
                 testimonialsSection.appendChild(setTitleOfSectionAtBottom("testimonials"));
+            } else if (myLink.getAttribute("id") === "link-contact") {
+                contactSection.classList.add("high-index");
+                contactSection.appendChild(setTitleOfSectionAtBottom("contact"));
             }
         });
     });

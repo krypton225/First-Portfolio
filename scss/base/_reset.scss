@@ -39,10 +39,20 @@ ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .high-index {
     z-index: 1000 !important;
     transform: rotate(0) !important;
     top: 0 !important;
+}
+
+.still-label {
+    top: -2rem;
+    visibility: visible;
+    opacity: 1;
 }
 
 .text-line {
