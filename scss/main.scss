@@ -1,8 +1,6 @@
 // * Abstract
-@import "./abstracts/variables";
 @import "./abstracts/colors";
 @import "./abstracts/mixins";
-@import "./abstracts/functions";
 @import "./abstracts/lato-font";
 
 // * Base
@@ -14,7 +12,6 @@
 @import "./components/main-bg";
 
 // * Layout
-@import "./layout/navbar";
 @import "./layout/home";
 @import "./layout/about";
 @import "./layout/works";
@@ -27,5 +24,4 @@
 // * Vendors
 @import "./vendors/fontawesome";
 @import "./vendors/bootstrap";
-@import "./vendors/aos";
 @import "./vendors/swiper";
