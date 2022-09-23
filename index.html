@@ -34,7 +34,6 @@
     <meta name="application-name" content="Beautiful application name">
 
     <!-- * This is main css file -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" /> -->
     <link rel="stylesheet" href="./dist/css/main.css">
 
     <!-- * This is html5shiv.js -->
@@ -85,7 +84,7 @@
             </li> <!-- ./menu-item -->
 
             <li href="#" class="menu-item" data-name="Hire Me">
-                <a href="#" class="menu-link" id="link-hire" aria-label="Hire Me">
+                <a href="#hire" class="menu-link" id="link-hire" aria-label="Hire Me">
                     <i class="fa-solid fa-mug-saucer"></i>
                 </a> <!-- ./menu-link -->
             </li> <!-- ./menu-item -->
@@ -502,7 +501,7 @@
 
         <!-- * Start contact section -->
         <section class="contact" id="contact">
-            <form action="" id="form">
+            <form action="" id="my-form">
                 <div class="container">
                     <div class="row gx-4 gy-5">
                         <div class="col-md-6">
@@ -535,9 +534,35 @@
                     </div> <!-- ./row -->
                 </div> <!-- ./container -->
             </form>
-
         </section> <!-- ./contact -->
 
+        <!-- * Start hire section -->
+        <section class="hire" id="hire">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hire__content">
+                            <p class="hire__content__text text-center">
+                                Do you want a professional <span>front end developer?</span><br>
+                                <button type="button" class="my-btn hire__content__text__btn" data-aos="flip-left">hire
+                                    me</button>
+                            </p> <!-- ./hire__content__text -->
+
+                            <div
+                                class="hire__imgs d-flex flex-column justify-content-center align-items-center text-center mx-auto">
+                                <div class="hire__imgs__arrow">
+                                    <img src="./assets/images/hire/arrow.png" alt="Arrow picture">
+                                </div> <!-- ./hire__imgs__arrow -->
+
+                                <div class="hire__imgs__person">
+                                    <img src="./assets/images/man-5.jpg" alt="A man who says some thing about hiring!">
+                                </div> <!-- ./hire__imgs__person -->
+                            </div> <!-- ./hire__imgs -->
+                        </div> <!-- ./hire__content -->
+                    </div> <!-- ./col-12 -->
+                </div> <!-- ./row -->
+            </div> <!-- ./container -->
+        </section> <!-- ./hire -->
     </main> <!-- ./main-bg -->
 
     <!-- * All my script files -->

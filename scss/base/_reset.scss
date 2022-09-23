@@ -79,3 +79,43 @@ a {
         display: none;
     }
 }
+
+.animation-left-right {
+    animation-name: fromLeftToRight;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+
+.animation-right-left {
+    animation-name: fromRightToLeft;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+
+@keyframes fromRightToLeft {
+    0% {
+        transform: translateX(-150px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeftToRight {
+    0% {
+        transform: translateX(350px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}

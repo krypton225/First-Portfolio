@@ -1,10 +1,31 @@
-// import "../node_modules/@fancyapps/ui/src/Fancybox/Fancybox";
+// * Main variables
+let homeTitle = document.querySelector(".home__content__title");
+let homeHello = document.querySelector(".home__content__hello");
+
+let aboutImage = document.querySelector(".about__img");
+let aboutContent = document.querySelector(".about__content");
+
+let inputNameForm = document.querySelector(".your-name");
+let inputEmailForm = document.querySelector(".your-email");
+
+let hireContentText = document.querySelector(".hire__content__text");
+let hireImage = document.querySelector(".hire__imgs");
+
+// * Add animations to home page titles after full loading and remove them after 2 seconds.
+window.addEventListener("load", () => {
+    setAnimationLeftRight(homeTitle);
+    setAnimationRightLeft(homeHello);
+
+    removeAnimationsAfterClick(homeTitle);
+    removeAnimationsAfterClick(homeHello);
+})
 
 showPicLanding();
 showTextLandingPage();
 layersSystem();
 swiperWorks();
 swiperTestimonials();
+preventSubmitForm();
 
 function showPicLanding() {
     let picLanding = document.getElementById("picLanding");
@@ -44,6 +65,7 @@ function layersSystem() {
     let toolsSection = document.getElementById("tools");
     let testimonialsSection = document.getElementById("testimonials");
     let contactSection = document.getElementById("contact");
+    let hireSection = document.getElementById("hire");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {
@@ -57,27 +79,38 @@ function layersSystem() {
             });
 
             if (myLink.getAttribute("id") === "link-home") {
-                homeSection.classList.add("high-index");
+                addHighIndexWithAppendTitle(homeSection, "");
+                setAnimationLeftRight(homeTitle);
+                setAnimationRightLeft(homeHello);
             } else if (myLink.getAttribute("id") === "link-about") {
-                aboutSection.classList.add("high-index");
-                aboutSection.appendChild(setTitleOfSectionAtBottom("about"));
-                setTitleOfSectionAtBottom("About", aboutSection);
+                addHighIndexWithAppendTitle(aboutSection, "about");
+                setAnimationRightLeft(aboutImage);
+                setAnimationLeftRight(aboutContent);
             } else if (myLink.getAttribute("id") === "link-works") {
-                worksSection.classList.add("high-index");
-                worksSection.appendChild(setTitleOfSectionAtBottom("works"));
-                setTitleOfSectionAtBottom("Works", worksSection);
+                addHighIndexWithAppendTitle(worksSection, "works");
             } else if (myLink.getAttribute("id") === "link-tools") {
-                toolsSection.classList.add("high-index");
-                toolsSection.appendChild(setTitleOfSectionAtBottom("tools"));
+                addHighIndexWithAppendTitle(toolsSection, "tools");
             } else if (myLink.getAttribute("id") === "link-testimonials") {
-                testimonialsSection.classList.add("high-index");
-                testimonialsSection.appendChild(setTitleOfSectionAtBottom("testimonials"));
+                addHighIndexWithAppendTitle(testimonialsSection, "testimonials");
             } else if (myLink.getAttribute("id") === "link-contact") {
-                contactSection.classList.add("high-index");
-                contactSection.appendChild(setTitleOfSectionAtBottom("contact"));
+                addHighIndexWithAppendTitle(contactSection, "contact");
+                setAnimationRightLeft(inputNameForm);
+                setAnimationLeftRight(inputEmailForm);
+            } else if (myLink.getAttribute("id") === "link-hire") {
+                addHighIndexWithAppendTitle(hireSection, "hire me");
+                setAnimationLeftRight(hireContentText);
+                setAnimationRightLeft(hireImage);
             }
         });
     });
+}
+
+function addHighIndexWithAppendTitle(sectionName, titleSection) {
+    sectionName.classList.add("high-index");
+
+    if (sectionName !== "homeSection") {
+        sectionName.appendChild(setTitleOfSectionAtBottom(titleSection));
+    }
 }
 
 function swiperWorks() {
@@ -153,4 +186,27 @@ function setTitleOfSectionAtBottom(titleName) {
     mySpan.appendChild(myText);
 
     return mySpan;
+}
+
+function preventSubmitForm() {
+    document.getElementById("my-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+    })
+}
+
+function removeAnimationsAfterClick(selector) {
+    setTimeout(() => {
+        selector.classList.remove("animation-left-right");
+        selector.classList.remove("animation-right-left");
+    }, 2000);
+}
+
+function setAnimationLeftRight(selector) {
+    selector.classList.add("animation-left-right");
+    removeAnimationsAfterClick(selector);
+}
+
+function setAnimationRightLeft(selector) {
+    selector.classList.add("animation-right-left");
+    removeAnimationsAfterClick(selector);
 }

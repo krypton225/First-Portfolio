@@ -83,9 +83,6 @@
             width: 100%;
             font-size: 5.6rem !important;
             letter-spacing: 2.3px;
-            animation-name: fromRightToLeft;
-            animation-timing-function: ease-in-out;
-            animation-duration: 1.5s;
 
             @media (max-width: 520px) {
                 font-size: 3.4rem !important;
@@ -96,9 +93,6 @@
             width: 100%;
             margin-top: 2rem;
             font-size: 4rem;
-            animation-name: fromLeftToRight;
-            animation-timing-function: ease-in-out;
-            animation-duration: 1.5s;
 
             @media (max-width: 520px) {
                 font-size: 3rem;
@@ -136,33 +130,5 @@
                 }
             }
         }
-    }
-}
-
-@keyframes fromRightToLeft {
-    0% {
-        transform: translateX(-150px);
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@keyframes fromLeftToRight {
-    0% {
-        transform: translateX(350px);
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        visibility: visible;
-        opacity: 1;
     }
 }
