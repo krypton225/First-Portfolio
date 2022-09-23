@@ -1,17 +1,8 @@
 .tools {
-    width: 100%;
-    height: 100%;
-    @include pad140;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(90deg);
+    @include baseLayoutSection;
     @include styleOriginTransform;
+    @include transitionAllEaseInOut3s;
     z-index: 900;
-    transition: all 0.3s ease-in-out 0.3s;
 
     .tool-card {
         width: 10rem;
@@ -29,31 +20,26 @@
             position: absolute;
             top: 106%;
             left: -110%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexCenterYX;
             text-align: center;
             text-transform: capitalize;
             font-size: 1.6rem;
             background-color: $darkBlue;
             color: $coffeeColor;
-            visibility: hidden;
-            opacity: 0;
+            @include hiddenWithOpacityZero;
             transition: all 0.3s ease-in-out;
         }
 
         &:hover::before {
             left: 8%;
-            visibility: visible;
-            opacity: 1;
+            @include visibleWithOpacityOne;
 
             @media (max-width: 1100px) {
                 left: 7%;
             }
 
             @media (max-width: 768px) {
-                visibility: hidden;
-                opacity: 0;
+                @include hiddenWithOpacityZero;
             }
         }
 

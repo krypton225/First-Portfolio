@@ -1,18 +1,14 @@
 .home {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include absoluteTopLeft50;
     transform: translate(-50%, -50%) rotate(0);
     @include styleOriginTransform;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenterYX;
     text-align: center;
     background-color: rgba(15, 15, 15, 0.397);
     z-index: 400;
-    transition: all 0.3s ease-in-out 0.3s;
+    @include transitionAllEaseInOut3s;
 
     &.add-props {
         top: -100%;
@@ -31,16 +27,14 @@
         position: absolute;
         bottom: 5.7rem;
         margin: 0 auto;
-        visibility: hidden;
-        opacity: 0;
+        @include hiddenWithOpacityZero;
         transform: scale(0);
         transition: all 0.6s ease-in-out;
         z-index: 99999;
 
         &.show-pic {
             transform: scale(1);
-            visibility: visible;
-            opacity: 1;
+            @include visibleWithOpacityOne;
         }
 
         img {
@@ -70,9 +64,7 @@
     &__content {
         width: 100%;
         margin-top: -5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        @include absoluteTopLeft50;
         transform: translate(-50%, -50%);
         color: $coffeeColor;
         text-transform: capitalize;
@@ -112,9 +104,7 @@
                     width: 0;
                     height: 100%;
                     border-radius: 4px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    @include absoluteTopLeftZero;
                     background-color: $orangeColor;
                     z-index: -1;
                     transition: all 0.33s ease-in;

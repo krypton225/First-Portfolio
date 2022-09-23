@@ -12,9 +12,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+        @include absoluteTopLeftZero;
         background-color: rgba($darkColor, 0.75);
         z-index: 100;
     }
@@ -72,16 +70,13 @@
                 position: absolute;
                 top: 0;
                 left: -130%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexCenterYX;
                 text-align: center;
                 text-transform: capitalize;
                 font-size: 1.6rem;
                 background-color: $darkBlue;
                 color: $coffeeColor;
-                visibility: hidden;
-                opacity: 0;
+                @include hiddenWithOpacityZero;
                 transition: all 0.3s ease-in-out;
 
                 @media (max-width: 1120px) {
@@ -91,16 +86,14 @@
 
             &:hover::before {
                 left: -230%;
-                visibility: visible;
-                opacity: 1;
+                @include visibleWithOpacityOne;
 
                 @media (max-width: 1120px) {
                     left: -42%;
                 }
 
                 @media (max-width: 500px) {
-                    visibility: hidden;
-                    opacity: 0;
+                    @include hiddenWithOpacityZero;
                 }
             }
 
@@ -113,9 +106,7 @@
                 text-align: center;
                 margin: 0 auto;
                 padding: 2.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexCenterYX;
                 color: $darkBlue;
                 background-color: $orangeColor;
                 overflow: hidden;

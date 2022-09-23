@@ -51,8 +51,7 @@ a {
 
 .still-label {
     top: -2rem;
-    visibility: visible;
-    opacity: 1;
+    @include visibleWithOpacityOne;
 }
 
 .text-line {
