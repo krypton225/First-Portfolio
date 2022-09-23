@@ -1,6 +1,6 @@
 # John Doe portfolio site
 
-## Tech Used 😁
+## Tech Used
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [SCSS](https://sass-lang.com/)
@@ -13,38 +13,37 @@
 - [SwiperJs](https://swiperjs.com/)
 - [npm](https://www.npmjs.com/)
 
-## After Downloading 😒
+## After Downloading
 
 ```bash
 npm install
 ```
 
-## Features 💪
+## Features
 
 - Responsive with all screens
 - Creative a new idea for the layout design
 
 
-## Demo 🥰
+## Demo
 
 you can see the live of the site [here](https://portfolio-john2.netlify.app/)
 
 
-## Author 😎
+## Author
 
 > [Khaled Mohamed](https://github.com/krypton225/)
-> I'm a Junior front end developer (UI Developer).
 
 
-## Lessons Learned 🤞
+## Lessons Learned
 
 I learned a lot from creating this project such as:
 - Using npm.
 - Using SCSS.
 - Using SwiperJS.
 - Customize the layout to be a responsive design.
-- And a lot in solving the problems which I faced while building the project 😁
+- And a lot in solving the problems which I faced while building the project.
 
 
-## License 😎
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
