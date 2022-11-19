@@ -71,7 +71,7 @@
 
                 &__job {
                     font-size: 1.5rem;
-                    color: $orangeColor;
+                    color: map-get($colors, "orange");
                 }
             }
         }

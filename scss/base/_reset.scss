@@ -14,7 +14,7 @@ body {
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: $orangeColor;
+        background-color: map-get($colors, "orange");
         border-radius: 10px;
     }
 
@@ -25,7 +25,7 @@ body {
 
 ::selection {
     color: $coffeeColor;
-    background: $orangeColor;
+    background: map-get($colors, "orange");
 }
 
 img {
@@ -68,8 +68,8 @@ a {
     font-size: 4.5rem;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $orangeColor;
-    color: $orangeColor;
+    -webkit-text-stroke-color: map-get($colors, "orange");
+    color: map-get($colors, "orange");
     background-color: #00000080;
     user-select: none;
     z-index: 99999;

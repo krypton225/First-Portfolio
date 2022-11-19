@@ -49,7 +49,7 @@
                 position: absolute;
                 top: 50%;
                 left: 7%;
-                background-color: $orangeColor;
+                background-color: map-get($colors, "orange");
             }
         }
 
@@ -108,7 +108,7 @@
                 padding: 2.5rem;
                 @include flexCenterYX;
                 color: $darkBlue;
-                background-color: $orangeColor;
+                background-color: map-get($colors, "orange");
                 overflow: hidden;
 
                 @media (max-width: 1120px) {

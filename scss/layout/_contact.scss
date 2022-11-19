@@ -26,7 +26,7 @@
             position: relative;
             padding: 1rem 0;
             border: none !important;
-            border-bottom: 0.1rem solid $orangeColor !important;
+            border-bottom: 0.1rem solid map-get($colors, "orange") !important;
             outline: none !important;
             letter-spacing: 1.4px;
             font-size: 1.6rem;

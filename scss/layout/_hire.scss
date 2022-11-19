@@ -42,7 +42,7 @@
             width: 14rem;
             height: 14rem;
             padding: 0.2rem;
-            border: 0.3rem solid $orangeColor;
+            border: 0.3rem solid map-get($colors, "orange");
             border-radius: 50%;
 
             img {

@@ -46,7 +46,7 @@
             content: "";
             width: 14.3rem;
             height: 14.3rem;
-            border: 3px solid $orangeColor;
+            border: 3px solid map-get($colors, "orange");
             border-radius: 50%;
             padding: 7.7rem;
             position: absolute;
@@ -93,7 +93,7 @@
             span {
                 display: inline-block;
                 position: relative;
-                color: $orangeColor;
+                color: map-get($colors, "orange");
 
                 &.home__content__title__front {
                     transition: all 0.3s ease 0.35s;
@@ -105,7 +105,7 @@
                     height: 100%;
                     border-radius: 4px;
                     @include absoluteTopLeftZero;
-                    background-color: $orangeColor;
+                    background-color: map-get($colors, "orange");
                     z-index: -1;
                     transition: all 0.33s ease-in;
                 }
