@@ -6,6 +6,7 @@ import {
 } from "./constants.js";
 
 import showPicLanding from "./showPicLanding.js";
+import setTitleOfSectionAtBottom from "./setTitleOfSectionAtBottom.js";
 
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
@@ -135,16 +136,6 @@ function swiperTestimonials() {
             },
         }
     });
-}
-
-function setTitleOfSectionAtBottom(titleName) {
-    let mySpan = document.createElement("span");
-    mySpan.classList.add("text-line");
-
-    let myText = document.createTextNode(titleName);
-    mySpan.appendChild(myText);
-
-    return mySpan;
 }
 
 function preventSubmitForm() {
