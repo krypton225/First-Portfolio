@@ -2,3 +2,10 @@ $darkColor: #020e18;
 $orangeColor: #ee6c4d;
 $darkBlue: #203857;
 $coffeeColor: #e8dab2;
+
+$colors: (
+    "dark": $darkColor,
+    "orange": $orangeColor,
+    "dark-blue": $darkBlue,
+    "coffee": $coffeeColor,
+);
