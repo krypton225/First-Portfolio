@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: $darkColor !important;
+    background-color: map-get($colors, "dark") !important;
     color: $coffeeColor !important;
     overflow-x: hidden;
 
