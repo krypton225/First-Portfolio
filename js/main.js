@@ -15,6 +15,8 @@ import swiperWorks from "./swiperWorks.js";
 
 import swiperTestimonials from "./swiperTestimonials.js";
 
+import removeAnimationsAfterClick from "./removeAnimationsAfterClick.js";
+
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
     setAnimationLeftRight(homeTitle);
@@ -73,13 +75,6 @@ function layersSystem() {
             }
         });
     });
-}
-
-function removeAnimationsAfterClick(selector) {
-    setTimeout(() => {
-        selector.classList.remove("animation-left-right");
-        selector.classList.remove("animation-right-left");
-    }, 2000);
 }
 
 function setAnimationLeftRight(selector) {
