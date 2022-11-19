@@ -1,3 +1,72 @@
+@mixin prefixing($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin flex-start-row {
+    @include prefixing(display, flex);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-end-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, flex-end);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-around-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-around);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-evenly-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-evenly);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-center-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, center);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-center-column {
+    @include flex-center-row;
+    @include prefixing(flex-direction, column);
+}
+
+@mixin flex-between-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-between);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-between-column {
+    @include flex-between-row;
+    @include prefixing(flex-direction, column);
+}
+
+@mixin reset-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin fade($type) {
+    @if $type == "hide" {
+        visibility: hidden;
+        opacity: 0;
+    } @else if $type == "show" {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @mixin styleOriginTransform {
     transform-origin: top right;
     transform-style: preserve-3D;
