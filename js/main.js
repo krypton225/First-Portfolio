@@ -6,7 +6,10 @@ import {
 } from "./constants.js";
 
 import showPicLanding from "./showPicLanding.js";
+
 import setTitleOfSectionAtBottom from "./setTitleOfSectionAtBottom.js";
+
+import preventSubmitForm from "./preventSubmitForm.js";
 
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
@@ -18,11 +21,14 @@ window.addEventListener("load", () => {
 })
 
 showPicLanding();
-layersSystem();
-swiperWorks();
-swiperTestimonials();
-preventSubmitForm();
 
+layersSystem();
+
+swiperWorks();
+
+swiperTestimonials();
+
+preventSubmitForm();
 
 function layersSystem() {
     let allLinks = Array.from(document.querySelectorAll(".main-bg .menu li a"));
@@ -136,12 +142,6 @@ function swiperTestimonials() {
             },
         }
     });
-}
-
-function preventSubmitForm() {
-    document.getElementById("my-form").addEventListener("submit", (e) => {
-        e.preventDefault();
-    })
 }
 
 function removeAnimationsAfterClick(selector) {
