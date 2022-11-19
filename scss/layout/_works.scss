@@ -57,7 +57,7 @@
                 font-size: 1.9rem;
                 cursor: pointer;
                 background-color: map-get($colors, "orange");
-                color: $coffeeColor;
+                color: map-get($colors, "coffee");
                 transition: all 0.5s ease-in;
             }
         }

@@ -11,7 +11,7 @@
         text-align: center;
         font-size: 2rem;
         border-radius: 1rem 9rem 0rem 7rem;
-        color: $coffeeColor;
+        color: map-get($colors, "coffee");
 
         @media (max-width: 576px) {
             font-size: 1.4rem;

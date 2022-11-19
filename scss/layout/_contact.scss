@@ -32,8 +32,8 @@
             font-size: 1.6rem;
             font-weight: 700;
             background-color: transparent;
-            color: $coffeeColor;
-            caret-color: $coffeeColor;
+            color: map-get($colors, "coffee");
+            caret-color: map-get($colors, "coffee");
             box-shadow: none;
 
             &::placeholder {

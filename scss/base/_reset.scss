@@ -6,7 +6,7 @@ html {
 
 body {
     background-color: map-get($colors, "dark") !important;
-    color: $coffeeColor !important;
+    color: map-get($colors, "coffee") !important;
     overflow-x: hidden;
 
     &::-webkit-scrollbar {
@@ -24,7 +24,7 @@ body {
 }
 
 ::selection {
-    color: $coffeeColor;
+    color: map-get($colors, "coffee");
     background: map-get($colors, "orange");
 }
 
