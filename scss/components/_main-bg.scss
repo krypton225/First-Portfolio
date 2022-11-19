@@ -74,7 +74,7 @@
                 text-align: center;
                 text-transform: capitalize;
                 font-size: 1.6rem;
-                background-color: $darkBlue;
+                background-color: map-get($colors, "dark-blue");
                 color: $coffeeColor;
                 @include hiddenWithOpacityZero;
                 transition: all 0.3s ease-in-out;
@@ -107,7 +107,7 @@
                 margin: 0 auto;
                 padding: 2.5rem;
                 @include flexCenterYX;
-                color: $darkBlue;
+                color: map-get($colors, "dark-blue");
                 background-color: map-get($colors, "orange");
                 overflow: hidden;
 
@@ -133,7 +133,7 @@
 
                 &:focus::before,
                 &:active::before {
-                    color: $darkBlue !important;
+                    color: map-get($colors, "dark-blue") !important;
                     background-color: transparent !important;
                 }
             }

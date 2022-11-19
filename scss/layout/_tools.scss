@@ -24,7 +24,7 @@
             text-align: center;
             text-transform: capitalize;
             font-size: 1.6rem;
-            background-color: $darkBlue;
+            background-color: map-get($colors, "dark-blue");
             color: $coffeeColor;
             @include hiddenWithOpacityZero;
             transition: all 0.3s ease-in-out;
