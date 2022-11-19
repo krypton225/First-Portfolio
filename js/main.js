@@ -1,15 +1,9 @@
-// * Main variables
-let homeTitle = document.querySelector(".home__content__title");
-let homeHello = document.querySelector(".home__content__hello");
-
-let aboutImage = document.querySelector(".about__img");
-let aboutContent = document.querySelector(".about__content");
-
-let inputNameForm = document.querySelector(".your-name");
-let inputEmailForm = document.querySelector(".your-email");
-
-let hireContentText = document.querySelector(".hire__content__text");
-let hireImage = document.querySelector(".hire__imgs");
+import {
+    homeTitle, homeHello, aboutImage, aboutContent,
+    inputNameForm, inputEmailForm, hireContentText, hireImage,
+    homeSection, aboutSection, worksSection, toolsSection,
+    testimonialsSection, contactSection, hireSection
+} from "./constants.js";
 
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
@@ -36,15 +30,6 @@ function showPicLanding() {
 
 function layersSystem() {
     let allLinks = Array.from(document.querySelectorAll(".main-bg .menu li a"));
-
-    // * Get all ID's sections
-    let homeSection = document.getElementById("home");
-    let aboutSection = document.getElementById("about");
-    let worksSection = document.getElementById("works");
-    let toolsSection = document.getElementById("tools");
-    let testimonialsSection = document.getElementById("testimonials");
-    let contactSection = document.getElementById("contact");
-    let hireSection = document.getElementById("hire");
 
     allLinks.forEach((myLink) => {
         myLink.addEventListener("click", () => {

@@ -7,6 +7,7 @@
     "url": "https://github.com/krypton225/First-Portfolio/issues"
   },
   "homepage": "https://github.com/krypton225/First-Portfolio#readme",
+  "type": "module",
   "keywords": [
     "HTML",
     "HTML5",
