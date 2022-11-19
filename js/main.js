@@ -11,6 +11,8 @@ import preventSubmitForm from "./preventSubmitForm.js";
 
 import addHighIndexWithAppendTitle from "./addHighIndexWithAppendTitle.js";
 
+import swiperWorks from "./swiperWorks.js";
+
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
     setAnimationLeftRight(homeTitle);
@@ -71,31 +73,7 @@ function layersSystem() {
     });
 }
 
-function swiperWorks() {
-    let swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        allowTouchMove: false,
-        loop: true,
-        autoplay: {
-            delay: 4200,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        nextButton: '#js-prev1',
-        prevButton: '#js-next1',
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-        }
-    });
-}
+
 
 function swiperTestimonials() {
     let swiperTestimonials = new Swiper(".swiper-testimonials", {
