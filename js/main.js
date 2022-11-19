@@ -7,9 +7,9 @@ import {
 
 import showPicLanding from "./showPicLanding.js";
 
-import setTitleOfSectionAtBottom from "./setTitleOfSectionAtBottom.js";
-
 import preventSubmitForm from "./preventSubmitForm.js";
+
+import addHighIndexWithAppendTitle from "./addHighIndexWithAppendTitle.js";
 
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
@@ -69,14 +69,6 @@ function layersSystem() {
             }
         });
     });
-}
-
-function addHighIndexWithAppendTitle(sectionName, titleSection) {
-    sectionName.classList.add("high-index");
-
-    if (sectionName !== "homeSection") {
-        sectionName.appendChild(setTitleOfSectionAtBottom(titleSection));
-    }
 }
 
 function swiperWorks() {
