@@ -1,3 +1,5 @@
+import "../node_modules/swiper/swiper-bundle.js";
+
 export default function swiperWorks() {
     let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,

@@ -1,3 +1,5 @@
+import "../node_modules/swiper/swiper-bundle.js";
+
 export default function swiperTestimonials() {
     let swiperTestimonials = new Swiper(".swiper-testimonials", {
         effect: "coverflow",
