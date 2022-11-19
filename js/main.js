@@ -5,6 +5,8 @@ import {
     testimonialsSection, contactSection, hireSection
 } from "./constants.js";
 
+import showPicLanding from "./showPicLanding.js";
+
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
     setAnimationLeftRight(homeTitle);
@@ -20,13 +22,6 @@ swiperWorks();
 swiperTestimonials();
 preventSubmitForm();
 
-function showPicLanding() {
-    let picLanding = document.getElementById("picLanding");
-
-    setTimeout(() => {
-        picLanding.classList.add("show-pic");
-    }, 1300);
-}
 
 function layersSystem() {
     let allLinks = Array.from(document.querySelectorAll(".main-bg .menu li a"));
