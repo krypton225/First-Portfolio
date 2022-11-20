@@ -1033,6 +1033,10 @@ p {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
   flex-direction: column;
 }
 .works__box__img {

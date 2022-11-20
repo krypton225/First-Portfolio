@@ -18,7 +18,7 @@
         text-align: center;
         text-transform: capitalize;
         @include flex-center-row;
-        flex-direction: column;
+        @include prefixing(flex-direction, column);
 
         &__img {
             width: 100%;
