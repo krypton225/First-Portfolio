@@ -23,21 +23,26 @@
         img {
             position: relative;
             border-radius: 10px;
-            filter: grayscale(1);
+            @include prefixing(filter, grayscale(1));
+            -webkit-transition: -webkit-transform 0.3s ease-in, -webkit-filter 0.5s ease-in;
+            transition: -webkit-transform 0.3s ease-in, -webkit-filter 0.5s ease-in;
+            -o-transition: transform 0.3s ease-in, filter 0.5s ease-in;
             transition: transform 0.3s ease-in, filter 0.5s ease-in;
+            transition: transform 0.3s ease-in, filter 0.5s ease-in, -webkit-transform 0.3s ease-in,
+                -webkit-filter 0.5s ease-in;
         }
 
         &:hover img {
-            filter: grayscale(0);
-            transform: scale(1.1) rotate(2deg);
+            @include prefixing(filter, grayscale(0));
+            @include prefixing(transform, scale(1.1) rotate(2deg));
         }
 
         @media (max-width: 767px) {
             margin-top: 25rem;
 
             &:hover img {
-                filter: grayscale(0);
-                transform: scale(1.001);
+                @include prefixing(filter, grayscale(0));
+                @include prefixing(transform, scale(1.001));
             }
         }
     }
