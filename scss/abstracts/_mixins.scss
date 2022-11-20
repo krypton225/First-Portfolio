@@ -14,23 +14,6 @@
     #{$prop}: #{$value};
 }
 
-@mixin flex-start-row {
-    @include prefixing(display, flex);
-    @include prefixing(align-items, center);
-}
-
-@mixin flex-end-row {
-    @include prefixing(display, flex);
-    @include prefixing(justify-content, flex-end);
-    @include prefixing(align-items, center);
-}
-
-@mixin flex-around-row {
-    @include prefixing(display, flex);
-    @include prefixing(justify-content, space-around);
-    @include prefixing(align-items, center);
-}
-
 @mixin flex-column-around-row {
     @include prefixing(display, flex);
     @include prefixing(flex-direction, row);
@@ -55,22 +38,6 @@
     @include prefixing(display, flex);
     @include prefixing(justify-content, center);
     @include prefixing(align-items, center);
-}
-
-@mixin flex-center-column {
-    @include flex-center-row;
-    @include prefixing(flex-direction, column);
-}
-
-@mixin flex-between-row {
-    @include prefixing(display, flex);
-    @include prefixing(justify-content, space-between);
-    @include prefixing(align-items, center);
-}
-
-@mixin flex-between-column {
-    @include flex-between-row;
-    @include prefixing(flex-direction, column);
 }
 
 @mixin reset-bg {
