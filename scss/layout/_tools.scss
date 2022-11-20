@@ -26,20 +26,20 @@
             font-size: 1.6rem;
             background-color: map-get($colors, "dark-blue");
             color: map-get($colors, "coffee");
-            @include hiddenWithOpacityZero;
+            @include fade(hide);
             transition: all 0.3s ease-in-out;
         }
 
         &:hover::before {
             left: 8%;
-            @include visibleWithOpacityOne;
+            @include fade(show);
 
             @media (max-width: 1100px) {
                 left: 7%;
             }
 
             @media (max-width: 768px) {
-                @include hiddenWithOpacityZero;
+                @include fade(hide);
             }
         }
 

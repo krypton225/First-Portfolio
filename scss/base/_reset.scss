@@ -51,7 +51,7 @@ a {
 
 .still-label {
     top: -2rem;
-    @include visibleWithOpacityOne;
+    @include fade(show);
 }
 
 .text-line {

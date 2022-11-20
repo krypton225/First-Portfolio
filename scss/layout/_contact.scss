@@ -17,7 +17,7 @@
             font-weight: 700;
             text-transform: capitalize;
             color: rgba(232, 218, 178, 0.55);
-            @include hiddenWithOpacityZero;
+            @include fade(hide);
             transition: all 0.4s ease-in;
         }
 
@@ -43,7 +43,7 @@
                 font-size: 1.6rem;
                 text-transform: capitalize;
                 color: rgba(232, 218, 178, 0.55);
-                @include visibleWithOpacityOne;
+                @include fade(show);
                 transition: all 0.4s ease-in;
             }
         }
@@ -70,7 +70,7 @@
         input:focus::placeholder,
         textarea:focus::placeholder {
             top: -2rem;
-            @include hiddenWithOpacityZero;
+            @include fade(hide);
         }
     }
 }

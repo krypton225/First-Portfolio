@@ -101,13 +101,3 @@
     background-color: rgba(15, 15, 15, 0.397);
     transform: rotate(90deg);
 }
-
-@mixin hiddenWithOpacityZero {
-    visibility: hidden;
-    opacity: 0;
-}
-
-@mixin visibleWithOpacityOne {
-    visibility: visible;
-    opacity: 1;
-}

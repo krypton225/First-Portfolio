@@ -4,9 +4,7 @@
     position: relative !important;
     background-image: url("../../assets/images/bg-1.jpg");
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include reset-bg;
 
     &::after {
         content: "";
@@ -76,7 +74,7 @@
                 font-size: 1.6rem;
                 background-color: map-get($colors, "dark-blue");
                 color: map-get($colors, "coffee");
-                @include hiddenWithOpacityZero;
+                @include fade(hide);
                 transition: all 0.3s ease-in-out;
 
                 @media (max-width: 1120px) {
@@ -86,14 +84,14 @@
 
             &:hover::before {
                 left: -230%;
-                @include visibleWithOpacityOne;
+                @include fade(show);
 
                 @media (max-width: 1120px) {
                     left: -42%;
                 }
 
                 @media (max-width: 500px) {
-                    @include hiddenWithOpacityZero;
+                    @include fade(hide);
                 }
             }
 
