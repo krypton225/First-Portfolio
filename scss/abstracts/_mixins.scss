@@ -67,6 +67,20 @@
     }
 }
 
+@mixin transition($prop, $time, $func, $delaying) {
+    @if $func == ease {
+        @include prefixing(transition, $prop #{$time}s ease #{$delaying}s);
+    } @else if $func == ease-in {
+        @include prefixing(transition, $prop #{$time}s ease-in #{$delaying}s);
+    } @else if $func == ease-in-out {
+        @include prefixing(transition, $prop #{$time}s ease-in-out #{$delaying}s);
+    } @else if $func == ease-out {
+        @include prefixing(transition, $prop #{$time}s ease-out #{$delaying}s);
+    } @else if $func == linear {
+        @include prefixing(transition, $prop #{$time}s linear #{$delaying}s);
+    }
+}
+
 @mixin styleOriginTransform {
     transform-origin: top right;
     transform-style: preserve-3D;

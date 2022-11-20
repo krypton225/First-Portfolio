@@ -1,7 +1,7 @@
 .testimonials {
     @include baseLayoutSection;
     @include styleOriginTransform;
-    @include transitionAllEaseInOut3s;
+    @include transition(all, 0.3, ease-in-out, 0.3);
     z-index: 700;
 
     .swiper-slide {

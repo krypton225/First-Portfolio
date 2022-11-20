@@ -495,6 +495,10 @@ p {
   text-align: center;
   background-color: rgba(15, 15, 15, 0.397);
   z-index: 400;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
 }
 .home.add-props {
@@ -627,6 +631,10 @@ p {
   transform: rotate(90deg);
   transform-origin: top right;
   transform-style: preserve-3D;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 500;
 }
@@ -714,6 +722,10 @@ p {
   transform: rotate(90deg);
   transform-origin: top right;
   transform-style: preserve-3D;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 700;
 }
@@ -837,6 +849,10 @@ p {
   transform: rotate(90deg);
   transform-origin: top right;
   transform-style: preserve-3D;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 900;
 }
@@ -948,6 +964,10 @@ p {
   transform: rotate(90deg);
   transform-origin: top right;
   transform-style: preserve-3D;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 700;
 }
@@ -1054,6 +1074,10 @@ p {
   transform: rotate(90deg);
   transform-origin: top right;
   transform-style: preserve-3D;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 900;
 }
@@ -1151,6 +1175,10 @@ p {
   transform: rotate(90deg);
   transform-origin: top right;
   transform-style: preserve-3D;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
   z-index: 950;
 }
