@@ -8,16 +8,7 @@
 @import "./components/index";
 
 // * Layout
-@import "./layout/home";
-@import "./layout/about";
-@import "./layout/works";
-@import "./layout/tools";
-@import "./layout/testimonials";
-@import "./layout/contact";
-@import "./layout/hire";
-@import "./layout/footer";
+@import "./layout/index";
 
 // * Vendors
-@import "./vendors/fontawesome";
-@import "./vendors/bootstrap";
-@import "./vendors/swiper";
+@import "./vendors/index";
