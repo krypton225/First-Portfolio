@@ -649,6 +649,10 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0);
+  -moz-transform: translate(-50%, -50%) rotate(0);
+  -ms-transform: translate(-50%, -50%) rotate(0);
+  -o-transform: translate(-50%, -50%) rotate(0);
   transform: translate(-50%, -50%) rotate(0);
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
@@ -677,19 +681,27 @@ p {
   align-items: center;
   text-align: center;
   background-color: rgba(15, 15, 15, 0.397);
-  z-index: 400;
   -webkit-transition: all 0.3s ease-in-out 0.3s;
   -moz-transition: all 0.3s ease-in-out 0.3s;
   -ms-transition: all 0.3s ease-in-out 0.3s;
   -o-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
+  z-index: 400;
 }
 .home.add-props {
   top: -100%;
   left: 0;
+  -webkit-transform: translate(0, 0) rotate(0);
+  -moz-transform: translate(0, 0) rotate(0);
+  -ms-transform: translate(0, 0) rotate(0);
+  -o-transform: translate(0, 0) rotate(0);
   transform: translate(0, 0) rotate(0);
 }
 .home.use-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
   user-select: none;
 }
 .home__img-landing {
@@ -701,6 +713,10 @@ p {
   margin: 0 auto;
   visibility: hidden;
   opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
   transform: scale(0);
   -webkit-transition: all 0.6s ease-in-out 0s;
   -moz-transition: all 0.6s ease-in-out 0s;
@@ -710,6 +726,10 @@ p {
   z-index: 99999;
 }
 .home__img-landing.show-pic {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1);
   visibility: visible;
   opacity: 1;
@@ -734,6 +754,10 @@ p {
   left: -10px;
 }
 .home__img-landing:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 .home__content {
@@ -742,9 +766,17 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #e8dab2;
   text-transform: capitalize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
   user-select: none;
   z-index: 99999;
 }
@@ -789,12 +821,12 @@ p {
   top: 0;
   left: 0;
   background-color: #ee6c4d;
-  z-index: -1;
   -webkit-transition: all 0.33s ease-in 0s;
   -moz-transition: all 0.33s ease-in 0s;
   -ms-transition: all 0.33s ease-in 0s;
   -o-transition: all 0.33s ease-in 0s;
   transition: all 0.33s ease-in 0s;
+  z-index: -1;
 }
 .home__content__title span.home__content__title__front:hover::before {
   width: 100%;
