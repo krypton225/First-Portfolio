@@ -55,7 +55,7 @@
             height: 90% !important;
             position: relative;
             cursor: pointer;
-            object-fit: cover !important;
+            @include prefixing(object-fit, cover !important);
             @include transition(transform, 0.3, ease-in-out, 0);
 
             @media (max-width: 768px) {
@@ -65,7 +65,7 @@
         }
 
         &:hover img {
-            transform: scale(1.3);
+            @include prefixing(transform, scale(1.3));
         }
     }
 }

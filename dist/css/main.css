@@ -1228,6 +1228,10 @@ p {
   height: 90% !important;
   position: relative;
   cursor: pointer;
+  -webkit-object-fit: cover !important;
+  -moz-object-fit: cover !important;
+  -ms-object-fit: cover !important;
+  -o-object-fit: cover !important;
   object-fit: cover !important;
   -webkit-transition: transform 0.3s ease-in-out 0s;
   -moz-transition: transform 0.3s ease-in-out 0s;
@@ -1242,6 +1246,10 @@ p {
   }
 }
 .tools .tool-card:hover img {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
   transform: scale(1.3);
 }
 
