@@ -5,7 +5,7 @@
     z-index: 950;
 
     &__content__text {
-        width: fit-content;
+        @include prefixing-values(width, fit-content);
         margin: 0 auto 4.5rem;
         padding: 2rem 1rem;
         text-align: center;
@@ -30,7 +30,7 @@
 
         &__arrow {
             width: 10rem;
-            height: fit-content;
+            @include prefixing-values(height, fit-content);
             margin-bottom: 2rem;
 
             @media (max-width: 768px) {
