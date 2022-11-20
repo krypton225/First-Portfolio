@@ -90,8 +90,8 @@
 }
 
 @mixin styleOriginTransform {
-    transform-origin: top right;
-    transform-style: preserve-3D;
+    @include prefixing(transform-origin, top right);
+    @include prefixing(transform-style, preserve-3D);
 }
 
 @mixin show-with-translate-x-0 {
@@ -113,10 +113,6 @@
     padding: 14rem 0;
 }
 
-@mixin transitionAllEaseInOut3s {
-    transition: all 0.3s ease-in-out 0.3s;
-}
-
 @mixin absoluteTopLeftZero {
     position: absolute;
     top: 0;
@@ -135,6 +131,6 @@
     @include pad140;
     @include absoluteTopLeftZero;
     @include flex-center-row;
+    @include prefixing(transform, rotate(90deg));
     background-color: rgba(15, 15, 15, 0.397);
-    transform: rotate(90deg);
 }
