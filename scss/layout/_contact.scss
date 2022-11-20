@@ -34,7 +34,51 @@
             background-color: transparent;
             color: map-get($colors, "coffee");
             caret-color: map-get($colors, "coffee");
-            box-shadow: none;
+            @include prefixing(box-shadow, none);
+
+            &::-webkit-input-placeholder {
+                position: absolute;
+                top: 0.6rem;
+                left: 0.3rem;
+                font-size: 1.6rem;
+                text-transform: capitalize;
+                color: rgba(232, 218, 178, 0.55);
+                @include fade(show);
+                @include transition(all, 0.4, ease-in, 0);
+            }
+
+            &::-moz-placeholder {
+                position: absolute;
+                top: 0.6rem;
+                left: 0.3rem;
+                font-size: 1.6rem;
+                text-transform: capitalize;
+                color: rgba(232, 218, 178, 0.55);
+                @include fade(show);
+                @include transition(all, 0.4, ease-in, 0);
+            }
+
+            &:-ms-input-placeholder {
+                position: absolute;
+                top: 0.6rem;
+                left: 0.3rem;
+                font-size: 1.6rem;
+                text-transform: capitalize;
+                color: rgba(232, 218, 178, 0.55);
+                @include fade(show);
+                @include transition(all, 0.4, ease-in, 0);
+            }
+
+            &::-ms-input-placeholder {
+                position: absolute;
+                top: 0.6rem;
+                left: 0.3rem;
+                font-size: 1.6rem;
+                text-transform: capitalize;
+                color: rgba(232, 218, 178, 0.55);
+                @include fade(show);
+                @include transition(all, 0.4, ease-in, 0);
+            }
 
             &::placeholder {
                 position: absolute;
@@ -65,6 +109,30 @@
                 height: 12.5rem;
                 margin-top: 0;
             }
+        }
+
+        input:focus::-webkit-input-placeholder,
+        textarea:focus::-webkit-input-placeholder {
+            top: -2rem;
+            @include fade(hide);
+        }
+
+        input:focus::-moz-placeholder,
+        textarea:focus::-moz-placeholder {
+            top: -2rem;
+            @include fade(hide);
+        }
+
+        input:focus:-ms-input-placeholder,
+        textarea:focus:-ms-input-placeholder {
+            top: -2rem;
+            @include fade(hide);
+        }
+
+        input:focus::-ms-input-placeholder,
+        textarea:focus::-ms-input-placeholder {
+            top: -2rem;
+            @include fade(hide);
         }
 
         input:focus::placeholder,
