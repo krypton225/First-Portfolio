@@ -1311,8 +1311,22 @@ p {
   position: relative;
   padding: 3rem 1.6rem;
   border-radius: 2rem;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  align-items: unset;
   text-align: center;
   font-size: 1.6rem;
   background-color: rgba(2, 14, 24, 0.431372549);
@@ -1320,8 +1334,20 @@ p {
 .testimonials__card__bottom {
   width: 85%;
   height: 0;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
   display: flex;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  -o-justify-content: space-evenly;
   justify-content: space-evenly;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
   align-items: center;
   border-radius: 50%;
   position: absolute;
@@ -1354,6 +1380,10 @@ p {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
   flex-direction: column;
   text-transform: capitalize;
 }
