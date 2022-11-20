@@ -15,12 +15,17 @@ body {
 
     &::-webkit-scrollbar-thumb {
         background-color: map-get($colors, "orange");
-        border-radius: 10px;
+        border-radius: 1rem;
     }
 
     &::-webkit-scrollbar-track {
         background-color: transparent;
     }
+}
+
+::-moz-selection {
+    color: map-get($colors, "coffee");
+    background: map-get($colors, "orange");
 }
 
 ::selection {
@@ -31,7 +36,7 @@ body {
 img {
     max-width: 100% !important;
     width: 100% !important;
-    object-fit: cover;
+    @include prefixing(object-fit, cover);
 }
 
 ul {
@@ -45,7 +50,7 @@ a {
 
 .high-index {
     z-index: 1000 !important;
-    transform: rotate(0) !important;
+    @include prefixing(transform, rotate(0) !important);
     top: 0 !important;
 }
 
@@ -56,22 +61,22 @@ a {
 
 .text-line {
     width: 100%;
-    height: fit-content;
+    @include prefixing-values(height, fit-content);
     padding: 0.5rem 0;
     display: inline-block;
     position: absolute;
     bottom: 0%;
     left: 50%;
-    transform: translateX(-50%);
+    @include prefixing(transform, translateX(-50%));
     text-align: center;
     text-transform: capitalize;
     font-size: 4.5rem;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: map-get($colors, "orange");
     color: map-get($colors, "orange");
     background-color: #00000080;
-    user-select: none;
+    @include prefixing(user-select, none);
     z-index: 99999;
 
     @media (max-width: 768px) {
@@ -80,41 +85,53 @@ a {
 }
 
 .animation-left-right {
-    animation-name: fromLeftToRight;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
+    @include prefixing(animation-name, fromLeftToRight);
+    @include prefixing(animation-timing-function, ease-in-out);
+    @include prefixing(animation-duration, 1.5s);
 }
 
 .animation-right-left {
-    animation-name: fromRightToLeft;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
+    @include prefixing(animation-name, fromRightToLeft);
+    @include prefixing(animation-timing-function, ease-in-out);
+    @include prefixing(animation-duration, 1.5s);
+}
+
+@-webkit-keyframes fromRightToLeft {
+    0% {
+        @include hide-with-translate-x-reverse-15rem;
+    }
+
+    100% {
+        @include show-with-translate-x-0;
+    }
 }
 
 @keyframes fromRightToLeft {
     0% {
-        transform: translateX(-150px);
-        visibility: hidden;
-        opacity: 0;
+        @include hide-with-translate-x-reverse-15rem;
     }
 
     100% {
-        transform: translateX(0);
-        visibility: visible;
-        opacity: 1;
+        @include show-with-translate-x-0;
+    }
+}
+
+@-webkit-keyframes fromLeftToRight {
+    0% {
+        @include hide-with-translate-x-35rem;
+    }
+
+    100% {
+        @include show-with-translate-x-0;
     }
 }
 
 @keyframes fromLeftToRight {
     0% {
-        transform: translateX(350px);
-        visibility: hidden;
-        opacity: 0;
+        @include hide-with-translate-x-35rem;
     }
 
     100% {
-        transform: translateX(0);
-        visibility: visible;
-        opacity: 1;
+        @include show-with-translate-x-0;
     }
 }

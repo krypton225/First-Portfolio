@@ -6,6 +6,14 @@
     #{$prop}: #{$value};
 }
 
+@mixin prefixing-values($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
 @mixin flex-start-row {
     @include prefixing(display, flex);
     @include prefixing(align-items, center);
@@ -84,6 +92,21 @@
 @mixin styleOriginTransform {
     transform-origin: top right;
     transform-style: preserve-3D;
+}
+
+@mixin show-with-translate-x-0 {
+    @include prefixing(transform, translateX(0));
+    @include fade(show);
+}
+
+@mixin hide-with-translate-x-reverse-15rem {
+    @include prefixing(transform, translateX(-15rem));
+    @include fade(hide);
+}
+
+@mixin hide-with-translate-x-35rem {
+    @include prefixing(transform, translateX(35rem));
+    @include fade(hide);
 }
 
 @mixin pad140 {
