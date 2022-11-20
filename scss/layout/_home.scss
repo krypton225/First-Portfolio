@@ -4,7 +4,7 @@
     @include absoluteTopLeft50;
     transform: translate(-50%, -50%) rotate(0);
     @include styleOriginTransform;
-    @include flexCenterYX;
+    @include flex-center-row;
     text-align: center;
     background-color: rgba(15, 15, 15, 0.397);
     z-index: 400;

@@ -97,15 +97,9 @@
     height: 100%;
     @include pad140;
     @include absoluteTopLeftZero;
-    @include flexCenterYX;
+    @include flex-center-row;
     background-color: rgba(15, 15, 15, 0.397);
     transform: rotate(90deg);
-}
-
-@mixin flexCenterYX {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @mixin hiddenWithOpacityZero {

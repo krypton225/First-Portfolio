@@ -17,7 +17,7 @@
         position: relative;
         text-align: center;
         text-transform: capitalize;
-        @include flexCenterYX;
+        @include flex-center-row;
         flex-direction: column;
 
         &__img {
@@ -40,7 +40,7 @@
             position: absolute;
             top: -110%;
             left: 0;
-            @include flexCenterYX;
+            @include flex-center-row;
             text-align: center;
             background-color: rgb(15 15 15 / 77%);
             z-index: 9999;
@@ -52,7 +52,7 @@
                 margin: 0 2rem;
                 padding: 1.4rem;
                 border-radius: 50%;
-                @include flexCenterYX;
+                @include flex-center-row;
                 text-align: center;
                 font-size: 1.9rem;
                 cursor: pointer;

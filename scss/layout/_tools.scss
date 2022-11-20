@@ -20,7 +20,7 @@
             position: absolute;
             top: 106%;
             left: -110%;
-            @include flexCenterYX;
+            @include flex-center-row;
             text-align: center;
             text-transform: capitalize;
             font-size: 1.6rem;

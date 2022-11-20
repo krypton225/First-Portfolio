@@ -59,7 +59,7 @@
             &__desc {
                 width: 100%;
                 height: 100%;
-                @include flexCenterYX;
+                @include flex-center-row;
                 flex-direction: column;
                 text-transform: capitalize;
 
