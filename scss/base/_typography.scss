@@ -22,7 +22,7 @@ p {
         bottom: -0.6rem;
         left: 0;
         background-color: map-get($colors, "orange");
-        transition: width 0.3s ease-in;
+        @include transition(width, 0.3, ease-in, 0);
     }
 
     &:hover::before {

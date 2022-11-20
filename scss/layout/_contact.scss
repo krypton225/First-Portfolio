@@ -18,7 +18,7 @@
             text-transform: capitalize;
             color: rgba(232, 218, 178, 0.55);
             @include fade(hide);
-            transition: all 0.4s ease-in;
+            @include transition(all, 0.4, ease-in, 0);
         }
 
         input,
@@ -44,7 +44,7 @@
                 text-transform: capitalize;
                 color: rgba(232, 218, 178, 0.55);
                 @include fade(show);
-                transition: all 0.4s ease-in;
+                @include transition(all, 0.4, ease-in, 0);
             }
         }
 

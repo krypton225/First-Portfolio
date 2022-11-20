@@ -324,7 +324,11 @@ p {
   bottom: -0.6rem;
   left: 0;
   background-color: #ee6c4d;
-  transition: width 0.3s ease-in;
+  -webkit-transition: width 0.3s ease-in 0s;
+  -moz-transition: width 0.3s ease-in 0s;
+  -ms-transition: width 0.3s ease-in 0s;
+  -o-transition: width 0.3s ease-in 0s;
+  transition: width 0.3s ease-in 0s;
 }
 .sec-title:hover::before {
   width: 50%;
@@ -366,7 +370,11 @@ p {
   background-color: transparent;
   color: #ee6c4d;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 .my-btn::before {
   content: "";
@@ -379,7 +387,11 @@ p {
   border-style: solid;
   border-color: #ee6c4d;
   border-radius: 0;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 .my-btn::after {
   content: "";
@@ -392,7 +404,11 @@ p {
   border-style: solid;
   border-color: #ee6c4d;
   border-radius: 0;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 .my-btn:hover::before, .my-btn:hover::after {
   width: 95%;
@@ -498,7 +514,11 @@ p {
   color: #e8dab2;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 @media (max-width: 1120px) {
   .main-bg .menu .menu-item::before {
@@ -563,7 +583,11 @@ p {
   top: 0;
   left: -110%;
   background-color: rgba(0, 0, 0, 0.151);
-  transition: all 0.33s ease-in-out;
+  -webkit-transition: all 0.33s ease-in-out 0s;
+  -moz-transition: all 0.33s ease-in-out 0s;
+  -ms-transition: all 0.33s ease-in-out 0s;
+  -o-transition: all 0.33s ease-in-out 0s;
+  transition: all 0.33s ease-in-out 0s;
 }
 .main-bg .menu .menu-item .menu-link:hover::before {
   left: 0;
@@ -632,7 +656,11 @@ p {
   visibility: hidden;
   opacity: 0;
   transform: scale(0);
-  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  -moz-transition: all 0.6s ease-in-out 0s;
+  -ms-transition: all 0.6s ease-in-out 0s;
+  -o-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s;
   z-index: 99999;
 }
 .home__img-landing.show-pic {
@@ -642,7 +670,11 @@ p {
 }
 .home__img-landing img {
   border-radius: 50%;
-  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in 0s;
+  -moz-transition: transform 0.3s ease-in 0s;
+  -ms-transition: transform 0.3s ease-in 0s;
+  -o-transition: transform 0.3s ease-in 0s;
+  transition: transform 0.3s ease-in 0s;
 }
 .home__img-landing::before {
   content: "";
@@ -696,6 +728,10 @@ p {
   color: #ee6c4d;
 }
 .home__content__title span.home__content__title__front {
+  -webkit-transition: all 0.3s ease 0.35s;
+  -moz-transition: all 0.3s ease 0.35s;
+  -ms-transition: all 0.3s ease 0.35s;
+  -o-transition: all 0.3s ease 0.35s;
   transition: all 0.3s ease 0.35s;
 }
 .home__content__title span.home__content__title__front::before {
@@ -708,7 +744,11 @@ p {
   left: 0;
   background-color: #ee6c4d;
   z-index: -1;
-  transition: all 0.33s ease-in;
+  -webkit-transition: all 0.33s ease-in 0s;
+  -moz-transition: all 0.33s ease-in 0s;
+  -ms-transition: all 0.33s ease-in 0s;
+  -o-transition: all 0.33s ease-in 0s;
+  transition: all 0.33s ease-in 0s;
 }
 .home__content__title span.home__content__title__front:hover::before {
   width: 100%;
@@ -929,7 +969,11 @@ p {
   text-align: center;
   background-color: rgba(15, 15, 15, 0.77);
   z-index: 9999;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 .works__box__content svg {
   width: 1.5rem;
@@ -957,7 +1001,11 @@ p {
   cursor: pointer;
   background-color: #ee6c4d;
   color: #e8dab2;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
 }
 
 .tools {
@@ -1043,7 +1091,11 @@ p {
   color: #e8dab2;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 .tools .tool-card:hover::before {
   left: 8%;
@@ -1075,7 +1127,11 @@ p {
   position: relative;
   cursor: pointer;
   object-fit: cover !important;
-  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out 0s;
+  -moz-transition: transform 0.3s ease-in-out 0s;
+  -ms-transition: transform 0.3s ease-in-out 0s;
+  -o-transition: transform 0.3s ease-in-out 0s;
+  transition: transform 0.3s ease-in-out 0s;
 }
 @media (max-width: 768px) {
   .tools .tool-card img {
@@ -1269,7 +1325,11 @@ p {
   color: rgba(232, 218, 178, 0.55);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  transition: all 0.4s ease-in 0s;
 }
 .contact .form-action input,
 .contact .form-action textarea {
@@ -1296,7 +1356,11 @@ p {
   color: rgba(232, 218, 178, 0.55);
   visibility: visible;
   opacity: 1;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  transition: all 0.4s ease-in 0s;
 }
 .contact .form-action .your-email {
   text-transform: none;

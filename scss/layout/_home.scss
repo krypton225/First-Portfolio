@@ -29,7 +29,7 @@
         margin: 0 auto;
         @include fade(hide);
         transform: scale(0);
-        transition: all 0.6s ease-in-out;
+        @include transition(all, 0.6, ease-in-out, 0);
         z-index: 99999;
 
         &.show-pic {
@@ -39,7 +39,7 @@
 
         img {
             border-radius: 50%;
-            transition: transform 0.3s ease-in;
+            @include transition(transform, 0.3, ease-in, 0);
         }
 
         &::before {
@@ -96,7 +96,7 @@
                 color: map-get($colors, "orange");
 
                 &.home__content__title__front {
-                    transition: all 0.3s ease 0.35s;
+                    @include transition(all, 0.3, ease, 0.35);
                 }
 
                 &.home__content__title__front::before {
@@ -107,7 +107,7 @@
                     @include absoluteTopLeftZero;
                     background-color: map-get($colors, "orange");
                     z-index: -1;
-                    transition: all 0.33s ease-in;
+                    @include transition(all, 0.33, ease-in, 0);
                 }
 
                 &.home__content__title__front:hover::before {

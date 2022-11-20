@@ -44,7 +44,7 @@
             text-align: center;
             background-color: rgb(15 15 15 / 77%);
             z-index: 9999;
-            transition: all 0.4s ease-in-out;
+            @include transition(all, 0.4, ease-in-out, 0);
 
             svg {
                 width: 1.5rem;
@@ -58,7 +58,7 @@
                 cursor: pointer;
                 background-color: map-get($colors, "orange");
                 color: map-get($colors, "coffee");
-                transition: all 0.5s ease-in;
+                @include transition(all, 0.5, ease-in, 0);
             }
         }
     }
