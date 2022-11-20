@@ -46,12 +46,12 @@
             content: "";
             width: 14.3rem;
             height: 14.3rem;
-            border: 3px solid map-get($colors, "orange");
+            border: 0.3rem solid map-get($colors, "orange");
             border-radius: 50%;
             padding: 7.7rem;
             position: absolute;
-            top: -10px;
-            left: -10px;
+            top: -1rem;
+            left: -1rem;
         }
 
         &:hover {
@@ -74,7 +74,7 @@
         &__hello {
             width: 100%;
             font-size: 5.6rem !important;
-            letter-spacing: 2.3px;
+            letter-spacing: 0.23rem;
 
             @media (max-width: 520px) {
                 font-size: 3.4rem !important;
@@ -103,7 +103,7 @@
                     content: "";
                     width: 0;
                     height: 100%;
-                    border-radius: 4px;
+                    border-radius: 0.4rem;
                     @include absoluteTopLeftZero;
                     background-color: map-get($colors, "orange");
                     @include transition(all, 0.33, ease-in, 0);
@@ -112,7 +112,7 @@
 
                 &.home__content__title__front:hover::before {
                     width: 100%;
-                    padding: 3px 7px;
+                    padding: 0.3rem 0.7rem;
                 }
 
                 &.home__content__title__front:hover {
