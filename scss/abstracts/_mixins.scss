@@ -31,8 +31,22 @@
     @include prefixing(align-items, center);
 }
 
+@mixin flex-column-around-row {
+    @include prefixing(display, flex);
+    @include prefixing(flex-direction, row);
+    @include prefixing(justify-content, space-around);
+    @include prefixing(align-items, center);
+}
+
 @mixin flex-evenly-row {
     @include prefixing(display, flex);
+    @include prefixing(justify-content, space-evenly);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-evenly-column {
+    @include prefixing(display, flex);
+    @include prefixing(flex-direction, column);
     @include prefixing(justify-content, space-evenly);
     @include prefixing(align-items, center);
 }

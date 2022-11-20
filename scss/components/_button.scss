@@ -50,6 +50,6 @@
     }
 
     &:hover {
-        transform: scale(1.1);
+        @include prefixing(transform, scale(1.1));
     }
 }
