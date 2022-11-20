@@ -46,15 +46,15 @@
             z-index: 9999;
             @include transition(all, 0.4, ease-in-out, 0);
 
-            svg {
-                width: 1.5rem;
-                height: 1.5rem;
+            i {
+                width: 1.8rem;
+                height: 1.8rem;
                 margin: 0 2rem;
-                padding: 1.4rem;
+                padding: 2rem;
                 border-radius: 50%;
                 @include flex-center-row;
                 text-align: center;
-                font-size: 1.9rem;
+                font-size: 1.7rem;
                 cursor: pointer;
                 background-color: map-get($colors, "orange");
                 color: map-get($colors, "coffee");

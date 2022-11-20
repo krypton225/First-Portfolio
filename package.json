@@ -22,14 +22,13 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch-sass": "sass --watch .\\scss\\main.scss .\\dist\\css\\main.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/krypton225/First-Portfolio.git"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
     "bootstrap": "^5.2.1",
     "swiper": "^8.4.2"
   }
