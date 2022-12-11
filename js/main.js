@@ -19,6 +19,8 @@ import removeAnimationsAfterClick from "./removeAnimationsAfterClick.js";
 
 import { setAnimationLeftRight, setAnimationRightLeft } from "./setAnimationsDirections.js";
 
+import setNavbarItems from "./data/navItems.js";
+
 // * Add animations to home page titles after full loading and remove them after 2 seconds.
 window.addEventListener("load", () => {
     setAnimationLeftRight(homeTitle);
@@ -26,7 +28,10 @@ window.addEventListener("load", () => {
 
     removeAnimationsAfterClick(homeTitle);
     removeAnimationsAfterClick(homeHello);
+
 })
+
+setNavbarItems();
 
 showPicLanding();
 
