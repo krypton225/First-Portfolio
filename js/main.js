@@ -23,16 +23,6 @@ import { setAnimationLeftRight, setAnimationRightLeft } from "./setAnimationsDir
 
 import setNavbarItems from "./data/navItems.js";
 
-// * Add animations to home page titles after full loading and remove them after 2 seconds.
-window.addEventListener("load", () => {
-    setAnimationLeftRight(homeTitle);
-    setAnimationRightLeft(homeHello);
-
-    removeAnimationsAfterClick(homeTitle);
-    removeAnimationsAfterClick(homeHello);
-
-});
-
 Loader.run();
 
 setNavbarItems();

@@ -87,12 +87,14 @@ a {
 .animation-left-right {
     @include prefixing(animation-name, fromLeftToRight);
     @include prefixing(animation-timing-function, ease-in-out);
+    @include prefixing(animation-delay, 0.1s);
     @include prefixing(animation-duration, 1.5s);
 }
 
 .animation-right-left {
     @include prefixing(animation-name, fromRightToLeft);
     @include prefixing(animation-timing-function, ease-in-out);
+    @include prefixing(animation-delay, 0.1s);
     @include prefixing(animation-duration, 1.5s);
 }
 

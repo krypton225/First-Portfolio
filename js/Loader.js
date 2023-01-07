@@ -1,3 +1,7 @@
+import { setAnimationLeftRight, setAnimationRightLeft } from "./setAnimationsDirections.js";
+
+import { homeTitle, homeHello } from "./constants.js";
+
 const Loader = (function () {
     function open() {
         document.onreadystatechange = function () {
@@ -9,6 +13,8 @@ const Loader = (function () {
                 setTimeout(function () {
                     document.getElementById('load').style.visibility = "hidden";
                     document.getElementById('main-bg').style.visibility = "visible";
+                    setAnimationLeftRight(homeTitle);
+                    setAnimationRightLeft(homeHello);
                 }, 1300);
             }
         }

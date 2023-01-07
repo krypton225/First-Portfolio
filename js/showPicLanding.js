@@ -3,5 +3,5 @@ export default function showPicLanding() {
 
     setTimeout(() => {
         picLanding.classList.add("show-pic");
-    }, 1300);
+    }, 2240);
 }
