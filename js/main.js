@@ -3,8 +3,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import Loader from "./Loader.js";
 
-import "../scss/main.scss";
-
 import {
     homeTitle, homeHello, aboutImage, aboutContent,
     inputNameForm, inputEmailForm, hireContentText, hireImage,
