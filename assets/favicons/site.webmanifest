@@ -1,0 +1,30 @@
+{
+    "name": "John Doe Portfolio Favicon Icons",
+    "short_name": "Favicon Icons",
+    "icons": [
+        {
+            "src": "./Android_Chrome/android-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./Android_Chrome/android-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./iOS_Safari_Web_Clip/apple-icon.png",
+            "type": "image/png"
+        },
+        {
+            "src": "./Web/favicon-16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "./Web/favicon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
