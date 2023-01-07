@@ -1,3 +1,5 @@
+import Loader from "./Loader.js";
+
 import {
     homeTitle, homeHello, aboutImage, aboutContent,
     inputNameForm, inputEmailForm, hireContentText, hireImage,
@@ -29,7 +31,9 @@ window.addEventListener("load", () => {
     removeAnimationsAfterClick(homeTitle);
     removeAnimationsAfterClick(homeHello);
 
-})
+});
+
+Loader.run();
 
 setNavbarItems();
 
