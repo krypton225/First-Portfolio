@@ -20,6 +20,7 @@
 - [Fontawesome 6 Free](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [SwiperJs](https://swiperjs.com/)
+- [Webpack](https://webpack.js.org/)
 - [npm](https://www.npmjs.com/)
 
 ## After Downloading
